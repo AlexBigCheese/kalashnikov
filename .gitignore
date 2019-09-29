@@ -1,3 +1,4 @@
 .packages
-.dart_tool
+.dart_tool/
 pubspec.lock
+doc/api/

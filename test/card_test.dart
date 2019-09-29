@@ -4,10 +4,10 @@ import 'package:kalashnikov/cards.dart';
 main() {
   group("card tests", () {
     const List<Card> cards = [
-      const Card(12,Suit.Diamonds),
-      const Card(11,Suit.Diamonds),
-      const Card(2,Suit.Diamonds),
-      const Card(5,Suit.Diamonds),
+      Card(12,Suit.Diamonds),
+      Card(11,Suit.Diamonds),
+      Card(2,Suit.Diamonds),
+      Card(5,Suit.Diamonds),
     ];
     test("kalashnikov", () {
       expect(hasGun(cards), true);
