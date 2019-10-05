@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.1+1
+
+* Updated documentation
+* Fixed a potential bug in `Card.hashCode`
+
 ## 0.5.1
 
 * Made compatible with dart 2.4.0

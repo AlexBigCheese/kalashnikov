@@ -99,7 +99,7 @@ class GameState {
   /// Performs the outcome of a duel unless a draw happens (In which case you, the programmer, should get the players to pick cards again)
   ///
   /// aPick is a's pick out of b's cards,
-  /// the output is it's success (negative = a success, positive = b success, 0 = nobody won)
+  /// the output is who is shot (negative = a shot, positive = b shot, 0 = nobody won)
   int performDuelOutcome(Player a, Player b, int aPick, int bPick) {
     int aShoot = b.calcDamage(aPick);
     int bShoot = a.calcDamage(bPick);

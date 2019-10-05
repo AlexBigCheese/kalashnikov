@@ -52,9 +52,16 @@ class Card with Comparable {
     return sym.compareTo(otherV);
   }
 
+  /// The hashCode of a card is a serialized representation of the card as bits
+  /// 
+  /// The bits of the card are `evvvvvss`
+  /// 
+  /// `e` is [extraId], 
+  /// `v` is [sym] (stands for value),
+  /// `s` is [suit]
   @override
   int get hashCode =>
-      ((extraId ?? 0) << 7) | (sym << 2) | Suit.values.indexOf(suit);
+      ((extraId ?? 0) << (7+extraId?.bitLength??0)) | (sym << 2) | Suit.values.indexOf(suit);
   operator ==(other) => other is Card && hashCode == other.hashCode;
 
   @override
