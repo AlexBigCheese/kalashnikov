@@ -1,10 +1,10 @@
 name: kalashnikov
-version: 0.5.0
+version: 0.5.1
 description: The Kalashnikov card game (Introduced on the youtube channel Life of Boris)
 author: Alexander James Clarke <ajclarke903@gmail.com>
 homepage: https://github.com/dwaindibbly/kalashnikov
 environment:
-  sdk: ">=2.5.0 <3.0.0"
+  sdk: ">=2.4.0 <3.0.0"
 dependencies:
   meta: ^1.1.7
   pedantic: ^1.8.0

@@ -5,12 +5,16 @@ import 'package:kalashnikov/cards.dart';
 class Player {
   /// What cards does the player have in their hand (Under normal circumstances, there should only be four. If there's not, panic.)
   List<Card> cards;
+
   /// How much health does the player have left?
   int healthLeft;
+
   /// Is the player dead?
   bool get dead => healthLeft <= 0;
+
   /// Does the player have a gun?
   bool get hasKalashnikov => hasGun(cards);
+
   /// Is the player's gun a golden kalashnikov?
   bool get hasGoldenKalashnikov => goldenKalashnikov(cards);
 
